@@ -19,6 +19,7 @@ export const PlayVedio=()=>{
   const[apiData , setApidata] = useState(null);
   const[channelData, setChanneldata]=useState(null);
   const[commentData , setCommentdata]=useState([]);
+  const[btnText , setBtnText]= useState("Subscribe")
 
   const fetchVedioData= async () =>{
 
@@ -87,6 +88,12 @@ export const PlayVedio=()=>{
     fetchCommentData()
   },[videoId])
 
+
+
+
+
+
+
   return(
     <div className={styles.playVedio}>
       {/* <video src={video1} controls autoPlay muted></video> */}
@@ -112,7 +119,7 @@ export const PlayVedio=()=>{
             <p>{apiData? apiData.snippet.channelTitle : "Loading.."}</p>
             <span>{channelData ? valueConverter(channelData.statistics.subscriberCount) : "50k"} Subscriber</span>
           </div>
-          <button>Subscribe</button>
+          <button onClick={()=> setBtnText(btnText === "Subscribe" ? "Subscribed" : "Subscribe")}>{btnText}</button>
         </div>
         <div className={styles.vidDescription}>
           <p>{apiData? apiData.snippet.localized.description.slice(0,300) : ""}</p>

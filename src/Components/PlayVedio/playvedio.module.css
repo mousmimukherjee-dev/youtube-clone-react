@@ -175,9 +175,11 @@
     height: 50vw;
   }
 
-  .vidDescription{
+  .vidDescription {
 
-    padding-left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+
   }
 
   .playVedio .playVidInfo span{
