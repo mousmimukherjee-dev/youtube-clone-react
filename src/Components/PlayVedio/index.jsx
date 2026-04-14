@@ -55,9 +55,7 @@ export const PlayVedio=()=>{
     catch(error){
 
       console.log("An error occured",error)
-    }
-
-    
+    } 
   }
 
   useEffect(()=>{
@@ -89,14 +87,8 @@ export const PlayVedio=()=>{
   },[videoId])
 
 
-
-
-
-
-
   return(
     <div className={styles.playVedio}>
-      {/* <video src={video1} controls autoPlay muted></video> */}
       <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
       <h3>{apiData?apiData.snippet.title:"Title here"}</h3>

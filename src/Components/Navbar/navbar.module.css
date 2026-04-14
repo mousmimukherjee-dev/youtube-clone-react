@@ -66,6 +66,28 @@ nav{
   border-radius:50%;
 }
 
+.navMiddle.searchBox{
+
+  position: relative;
+}
+
+.searches{
+
+  position: absolute;
+  top:45px;
+  background-color: #fff;
+  width: 400px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+
+}
+
+.searches li{
+
+  list-style: none;
+  padding: 10px;
+}
+
 @media screen and (max-width:900px) {
   
 

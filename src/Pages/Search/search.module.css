@@ -1,0 +1,16 @@
+.searchContainer{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 16px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width:900px){
+
+.searchContainer{
+
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
