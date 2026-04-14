@@ -1,0 +1,3 @@
+*****My first approach was to fully understand the YouTube API endpoints and where to use each one. 
+After that, I created the complete skeleton of the application with proper structure and detailed planning. 
+Then I started fetching the data and placed it in the appropriate sections*****
