@@ -2,10 +2,9 @@ import styles from "./searchfeed.module.css"
 import { apiKEY } from "../../data/data"
 import { NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { valueConverter } from "../../data/data"
 import { useParams } from "react-router-dom"
-import { Sidebar } from "../../Components/Sidebar"
-import moment from "moment"
+
+
 
 
 export const SearchFeed=({ videoId})=>{
@@ -49,7 +48,7 @@ export const SearchFeed=({ videoId})=>{
       <img src={item.snippet.thumbnails.medium.url} alt="" />
       <h2>{item.snippet.title}</h2>
       <h3>{item.snippet.channelTitle}</h3>
-      {/* <p>{valueConverter(item.statistics.viewCount)} views &bull; {moment(item.snippet.publishedAt).fromNow()}</p> */}
+      
     </NavLink>
     )
       })}

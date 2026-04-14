@@ -1,7 +1,6 @@
 import styles from "./searchrecommend.module.css"
 import { apiKEY } from "../../data/data"
 import { useState , useEffect } from "react"
-import { valueConverter } from "../../data/data"
 import { NavLink, useParams } from "react-router-dom"
 
 
@@ -53,7 +52,6 @@ export const SearchRecommend= ({videoId})=>{
         <div className={styles.vidInfo}>
           <h4>{item.snippet.title}</h4>
           <p>{item.snippet.channelTitle}</p>
-          {/* <p>{valueConverter(item.statistics.viewCount)} Views</p> */}
         </div>
       </NavLink>
 
