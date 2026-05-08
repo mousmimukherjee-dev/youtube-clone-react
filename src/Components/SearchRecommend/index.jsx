@@ -6,8 +6,6 @@ import { NavLink, useParams } from "react-router-dom"
 
 export const SearchRecommend= ({videoId})=>{
 
-
-
   const[apiData , setApidata] = useState([]);
 
   const fetchApi= async () =>{
@@ -29,7 +27,6 @@ export const SearchRecommend= ({videoId})=>{
       console.log("An error occured while fetching data", error)
     }
   
-
   }
 
   useEffect(()=>{

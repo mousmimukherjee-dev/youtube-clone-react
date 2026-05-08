@@ -43,7 +43,7 @@ export const Feed=({category})=>{
       <h2>{item.snippet.title}</h2>
       <h3>{item.snippet.channelTitle}</h3>
       <p>{valueConverter(item.statistics.viewCount)} views &bull; {moment(item.snippet.publishedAt).fromNow()}</p>
-    </NavLink>
+      </NavLink>
     )
       })}
    

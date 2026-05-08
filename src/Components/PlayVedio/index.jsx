@@ -101,8 +101,6 @@ export const PlayVedio=()=>{
           <span><img src={save} alt="" />Save</span>
          </div>
         </div>
-         
-
         <hr />
 
         <div className={styles.publisher}>
@@ -120,8 +118,6 @@ export const PlayVedio=()=>{
           <h4>{apiData? valueConverter(apiData.statistics.commentCount) : "Loading..."}</h4>
 
           {commentData?.map((item,index)=>{
-
-
           return(
 
             <div className={styles.comment} key={index}>
@@ -133,19 +129,13 @@ export const PlayVedio=()=>{
                 
                 <img src={like} alt="" />
                 <span>{valueConverter(item.snippet.topLevelComment.snippet.likeCount)}</span>
-                <img src={dislike} alt="" />
-             
+                <img src={dislike} alt="" />            
               </div>
               </div>
             </div>
           )
           })}
-          
-          
         </div>
        </div>
-
-   
-
   )
 }
