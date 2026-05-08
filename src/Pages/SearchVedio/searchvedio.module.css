@@ -35,10 +35,21 @@ h1 {
   height: 37vw;
 }
 
+
+  .playSearch span{
+
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
 @media screen and (max-width: 900px) {
-  .playSearch iframe {
+  .playSearch{
     width: 100%;
     height: 37vw;
-    margin: 0 3px 0 0;
+    margin-bottom: 34px;
+  }
+
+  .playSearch span{
+
+    display: none;
   }
 }

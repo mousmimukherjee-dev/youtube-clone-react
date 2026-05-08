@@ -43,7 +43,7 @@ export const SearchVedio=( )=>{
         return <div className={styles.playSearch} >
            <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1` } frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
            <h3>{item.snippet.title}</h3>    
-            <h1>Underhåll pågår</h1>
+            <span>Underhåll pågår</span>
         </div>
       })}
      
